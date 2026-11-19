@@ -157,6 +157,16 @@ Notes:
   ```powershell
   .\start-online.ps1 -Port 8001
   ```
+
+## Free PHP Hosting (School Demo)
+This app can run on a PHP host that supports PDO SQLite and writable files. GitHub Pages cannot run the PHP backend. For hosts that keep the project inside a public `htdocs` folder:
+
+1. Create a free PHP hosting account and a site/subdomain.
+2. Copy `config/local.php.example` to `config/local.php`, set a unique admin password, and upload the app files to the site's web root. Do not upload `database/app.db`, session files, local logs, or real staff data.
+3. Keep the included `.htaccess` files in `config`, `database`, and private upload folders. They prevent direct web access to setup settings, the SQLite database, and private attachments.
+4. Make `database` and `uploads` writable by PHP, then visit the site. The app will initialize a fresh database and create the initial `admin` account.
+
+Free hosts can change limits and may not provide backups. Back up the database and uploads separately; this is suitable for a school demonstration, not sensitive production records.
 ## Admin Setup
 The database seed creates the initial admin account as `admin` unless `ADMIN_DEFAULT_USERNAME` is set. Set `ADMIN_DEFAULT_PASSWORD` before the first database initialization; the application does not use a shared default password. Choose a strong password and keep it private.
 

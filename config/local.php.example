@@ -1,0 +1,8 @@
+<?php
+declare(strict_types=1);
+
+return [
+    // Copy this file to local.php and replace the value before the first visit.
+    'ADMIN_DEFAULT_PASSWORD' => 'replace-with-a-long-unique-password',
+    'APP_TIMEZONE' => 'Africa/Lagos',
+];

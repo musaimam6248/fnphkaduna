@@ -5,6 +5,15 @@
 /uploads/*
 !/uploads/.gitkeep
 !/uploads/*/.gitkeep
+!/uploads/reports/
+!/uploads/monthly_reports/
+!/uploads/annual_events/
+/uploads/reports/*
+/uploads/monthly_reports/*
+/uploads/annual_events/*
+!/uploads/reports/.htaccess
+!/uploads/monthly_reports/.htaccess
+!/uploads/annual_events/.htaccess
 /php-server.err.log
 /php-server.out.log
 *.log
@@ -12,6 +21,7 @@
 .env.*
 !.env.example
 .mcp.json
+/config/local.php
 /vendor/
 /node_modules/
 /.agents/
